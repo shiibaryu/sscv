@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Pj+7ZRgfOsCqpOrLWeZLmdZPRl15IAomA8EOu3runeozNc3U9HVaVtR0ExxPCbiHhtQsU3T6POMiPMjAdtXWkw==",
+  "dgSpecHash": "TZsfAbOkgSBfbgvofpPZEEASzqH43WOamm1pNiYaE6rjQou2yh7Q5JbB9cBa5UAqbMothBNju6VBMj4hxzXzMA==",
   "success": true,
-  "projectFilePath": "/Users/siiba/Program/batzen/Zen/expAintecIsolation/batzen.csproj",
+  "projectFilePath": "/Users/siiba/Program/sscv/batzen.csproj",
   "expectedPackageFiles": [
     "/Users/siiba/.nuget/packages/decisiondiagrams/1.0.5/decisiondiagrams.1.0.5.nupkg.sha512",
     "/Users/siiba/.nuget/packages/deedle/2.3.0/deedle.2.3.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/siiba/Program/batzen/Zen/expAintecIsolation/batzen.csproj": {}
+    "/Users/siiba/Program/sscv/batzen.csproj": {}
   },
   "projects": {
-    "/Users/siiba/Program/batzen/Zen/expAintecIsolation/batzen.csproj": {
+    "/Users/siiba/Program/sscv/batzen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/siiba/Program/batzen/Zen/expAintecIsolation/batzen.csproj",
+        "projectUniqueName": "/Users/siiba/Program/sscv/batzen.csproj",
         "projectName": "batzen",
-        "projectPath": "/Users/siiba/Program/batzen/Zen/expAintecIsolation/batzen.csproj",
+        "projectPath": "/Users/siiba/Program/sscv/batzen.csproj",
         "packagesPath": "/Users/siiba/.nuget/packages/",
-        "outputPath": "/Users/siiba/Program/batzen/Zen/expAintecIsolation/obj/",
+        "outputPath": "/Users/siiba/Program/sscv/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/siiba/.nuget/NuGet/NuGet.Config"

@@ -6,11 +6,6 @@ namespace batzen
 
     class FrrProperty
     {
-        //public const string ifNumPath = "/Users/siiba/Program/batzen/Zen/batzen_frrLinux/conf/{0}/ifnum.txt";
-
-        //public const string ifPath = "/Users/siiba/Program/batzen/Zen/batzen_frrLinux/conf/{0}/if.txt";
-
-        //public const string ifPath = "/home/siiba/expAintecIsolation/line_dc_conf/{0}/if.json";
 		public const string ifPath = "./dc_conf/{0}/if.json";
         
         public const string v4RoutePath = "./dc_conf/{0}/v4route.txt";

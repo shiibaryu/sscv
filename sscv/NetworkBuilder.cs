@@ -16,7 +16,6 @@ namespace batzen
 		public static Stack headerStack = new Stack();
 		//public static Zen<Ipv6Header> innerHdr = null;
 
-       // public string TopoPath = "/home/siiba/expAintecIsolation/line_dc_conf/topology/topology.json";
 	    public string TopoPath = "./dc_conf/topology/topology.json";
 
         public void Build(Property prop,int deviceNum)

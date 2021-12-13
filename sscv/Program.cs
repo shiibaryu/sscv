@@ -8,7 +8,6 @@
     class Program
     {
         const string directoryPath = "./dc_conf";
-        //const string directoryPath = "/home/siiba/expAintecIsolation/line_dc_conf";
 
         static void Main(string[] args)
         {
