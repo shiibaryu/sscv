@@ -1,0 +1,15 @@
+2001:1::/64 dev net0 proto kernel metric 256 pref medium
+2001:2::/64 dev net1 proto kernel metric 256 pref medium
+2001:3::10  encap seg6 mode inline segs 3 [ fc00:10::1 fc00:3::1 :: ] via 2001:2::2 dev net1 metric 1024 pref medium
+2001:3::/64 via fe80::d8d4:dff:feac:6a62 dev net1 proto ospf metric 20 pref medium
+2001:4::/64 dev net2 proto kernel metric 256 pref medium
+fc00:1::/64 via fe80::4405:aaff:fe28:e0f9 dev net0 proto ospf metric 20 pref medium
+fc00:2::5  encap seg6local action End via 2001:1::1 dev net0 metric 1024 pref medium
+fc00:2::/64 dev lo proto kernel metric 256 pref medium
+fc00:3::/64 via fe80::d8d4:dff:feac:6a62 dev net1 proto ospf metric 20 pref medium
+fc00:4::/64 via fe80::d8d4:dff:feac:6a62 dev net1 proto ospf metric 20 pref medium
+fc00:10::/64 via fe80::a8cf:9ff:fe84:6b9 dev net2 proto ospf metric 20 pref medium
+fc00:11::/64 via fe80::7407:70ff:fe38:6522 dev net2 proto ospf metric 20 pref medium
+fe80::/64 dev net0 proto kernel metric 256 pref medium
+fe80::/64 dev net1 proto kernel metric 256 pref medium
+fe80::/64 dev net2 proto kernel metric 256 pref medium

@@ -1,0 +1,30 @@
+2001:1::/64 proto ospf metric 20 
+	nexthop via fe80::4856:aaff:febe:40f dev net0 weight 1 
+	nexthop via fe80::7824:ffff:fe13:5d6d dev net1 weight 1 
+2001:2::/64 via fe80::4856:aaff:febe:40f dev net0 proto ospf metric 20 pref medium
+2001:3::/64 via fe80::7824:ffff:fe13:5d6d dev net1 proto ospf metric 20 pref medium
+2001:4::/64 dev net0 proto kernel metric 256 pref medium
+2001:5::/64 dev net1 proto kernel metric 256 pref medium
+2001:6::/64 dev net2 proto kernel metric 256 pref medium
+2001:7::/64 dev net3 proto kernel metric 256 pref medium
+local ::1 dev lo table local proto kernel metric 0 pref medium
+anycast 2001:4:: dev net0 table local proto kernel metric 0 pref medium
+local 2001:4::2 dev net0 table local proto kernel metric 0 pref medium
+anycast 2001:5:: dev net1 table local proto kernel metric 0 pref medium
+local 2001:5::2 dev net1 table local proto kernel metric 0 pref medium
+anycast 2001:6:: dev net2 table local proto kernel metric 0 pref medium
+local 2001:6::1 dev net2 table local proto kernel metric 0 pref medium
+anycast 2001:7:: dev net3 table local proto kernel metric 0 pref medium
+local 2001:7::1 dev net3 table local proto kernel metric 0 pref medium
+anycast fe80:: dev net3 table local proto kernel metric 0 pref medium
+anycast fe80:: dev net0 table local proto kernel metric 0 pref medium
+anycast fe80:: dev net1 table local proto kernel metric 0 pref medium
+anycast fe80:: dev net2 table local proto kernel metric 0 pref medium
+local fe80::c05:50ff:fe91:6930 dev net2 table local proto kernel metric 0 pref medium
+local fe80::8c18:b3ff:fe72:e200 dev net3 table local proto kernel metric 0 pref medium
+local fe80::ecc1:d6ff:fe79:2010 dev net1 table local proto kernel metric 0 pref medium
+local fe80::f075:e0ff:fec8:e2d5 dev net0 table local proto kernel metric 0 pref medium
+multicast ff00::/8 dev net0 table local proto kernel metric 256 pref medium
+multicast ff00::/8 dev net1 table local proto kernel metric 256 pref medium
+multicast ff00::/8 dev net2 table local proto kernel metric 256 pref medium
+multicast ff00::/8 dev net3 table local proto kernel metric 256 pref medium

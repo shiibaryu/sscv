@@ -1,0 +1,92 @@
+[{
+        "ifindex": 1,
+        "ifname": "lo",
+        "flags": ["LOOPBACK","UP","LOWER_UP"],
+        "mtu": 65536,
+        "qdisc": "noqueue",
+        "operstate": "UNKNOWN",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "loopback",
+        "address": "00:00:00:00:00:00",
+        "broadcast": "00:00:00:00:00:00",
+        "addr_info": [{
+                "family": "inet",
+                "local": "127.0.0.1",
+                "prefixlen": 8,
+                "scope": "host",
+                "label": "lo",
+                "valid_life_time": 4294967295,
+                "preferred_life_time": 4294967295
+            }]
+    },{
+        "ifindex": 2,
+        "ifname": "net0",
+        "link_index": 2,
+        "flags": ["BROADCAST","MULTICAST","UP","LOWER_UP"],
+        "mtu": 1500,
+        "qdisc": "noqueue",
+        "operstate": "UP",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "12:cb:7c:96:b9:e1",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "link_netnsid": 0,
+        "addr_info": [{
+                "family": "inet",
+                "local": "10.0.0.1",
+                "prefixlen": 30,
+                "scope": "global",
+                "label": "net0",
+                "valid_life_time": 4294967295,
+                "preferred_life_time": 4294967295
+            }]
+    },{
+        "ifindex": 3,
+        "ifname": "net1",
+        "link_index": 2,
+        "flags": ["BROADCAST","MULTICAST","UP","LOWER_UP"],
+        "mtu": 1500,
+        "qdisc": "noqueue",
+        "operstate": "UP",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "9e:2a:f7:34:49:66",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "link_netnsid": 1,
+        "addr_info": [{
+                "family": "inet",
+                "local": "10.0.0.9",
+                "prefixlen": 30,
+                "scope": "global",
+                "label": "net1",
+                "valid_life_time": 4294967295,
+                "preferred_life_time": 4294967295
+            }]
+    },{
+        "ifindex": 4,
+        "ifname": "net2",
+        "link_index": 2,
+        "flags": ["BROADCAST","MULTICAST","UP","LOWER_UP"],
+        "mtu": 1500,
+        "qdisc": "noqueue",
+        "operstate": "UP",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "4e:ee:93:47:db:51",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "link_netnsid": 2,
+        "addr_info": [{
+                "family": "inet",
+                "local": "10.0.0.17",
+                "prefixlen": 30,
+                "scope": "global",
+                "label": "net2",
+                "valid_life_time": 4294967295,
+                "preferred_life_time": 4294967295
+            }]
+    }
+]

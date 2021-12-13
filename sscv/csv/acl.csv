@@ -1,0 +1,93 @@
+,Node,Filter,Line,Line_Index,Action
+0,as1border1,101,permit ip host 1.0.1.0 host 255.255.255.0,0,PERMIT
+1,as1border1,101,permit ip host 1.0.2.0 host 255.255.255.0,1,PERMIT
+2,as1border1,102,permit ip host 2.0.0.0 host 255.0.0.0,0,PERMIT
+3,as1border1,102,permit ip host 2.128.0.0 host 255.255.0.0,1,PERMIT
+4,as1border1,103,permit ip host 3.0.1.0 host 255.255.255.0,0,PERMIT
+5,as1border1,103,permit ip host 3.0.2.0 host 255.255.255.0,1,PERMIT
+6,as1border2,101,permit ip host 1.0.1.0 host 255.255.255.0,0,PERMIT
+7,as1border2,101,permit ip host 1.0.2.0 host 255.255.255.0,1,PERMIT
+8,as1border2,102,permit ip host 2.0.0.0 host 255.0.0.0,0,PERMIT
+9,as1border2,102,permit ip host 2.128.0.0 host 255.255.0.0,1,PERMIT
+10,as1border2,103,permit ip host 3.0.1.0 host 255.255.255.0,0,PERMIT
+11,as2border1,101,permit ip host 1.0.1.0 host 255.255.255.0,0,PERMIT
+12,as2border1,101,permit ip host 1.0.2.0 host 255.255.255.0,1,PERMIT
+13,as2border1,103,permit ip host 3.0.1.0 host 255.255.255.0,0,PERMIT
+14,as2border1,103,permit ip host 3.0.2.0 host 255.255.255.0,1,PERMIT
+15,as2border1,INSIDE_TO_AS1,permit ip 2.0.0.0 0.255.255.255 1.0.0.0 0.255.255.255,0,PERMIT
+16,as2border1,INSIDE_TO_AS1,permit ip 10.12.11.2 0.0.0.0 10.12.11.1 0.0.0.0,1,PERMIT
+17,as2border1,INSIDE_TO_AS1,deny   ip any any,2,DENY
+18,as2border1,OUTSIDE_TO_INSIDE,deny   ip 2.0.0.0 0.255.255.255 any,0,DENY
+19,as2border1,OUTSIDE_TO_INSIDE,deny   ip any host 2.128.1.101,1,DENY
+20,as2border1,OUTSIDE_TO_INSIDE,permit ip any any,2,PERMIT
+21,as2border2,101,permit ip host 1.0.1.0 host 255.255.255.0,0,PERMIT
+22,as2border2,101,permit ip host 1.0.2.0 host 255.255.255.0,1,PERMIT
+23,as2border2,103,permit ip host 3.0.1.0 host 255.255.255.0,0,PERMIT
+24,as2border2,103,permit ip host 3.0.2.0 host 255.255.255.0,1,PERMIT
+25,as2border2,INSIDE_TO_AS3,permit ip 2.0.0.0 0.255.255.255 3.0.0.0 0.255.255.255,0,PERMIT
+26,as2border2,INSIDE_TO_AS3,permit ip 10.23.21.2 0.0.0.0 10.23.21.3 0.0.0.0,1,PERMIT
+27,as2border2,INSIDE_TO_AS3,deny   ip any any,2,DENY
+28,as2border2,OUTSIDE_TO_INSIDE,deny   ip 2.0.0.0 0.255.255.255 any,0,DENY
+29,as2border2,OUTSIDE_TO_INSIDE,permit ip any any,1,PERMIT
+30,as2core1,blocktelnet,deny   tcp any any eq telnet,0,DENY
+31,as2core1,blocktelnet,permit ip any any,1,PERMIT
+32,as2dept1,102,permit ip host 2.128.0.0 host 255.255.255.0,0,PERMIT
+33,as2dept1,102,permit ip host 2.128.1.0 host 255.255.255.0,1,PERMIT
+34,as2dept1,105,permit ip host 1.0.1.0 host 255.255.255.0,0,PERMIT
+35,as2dept1,105,permit ip host 1.0.2.0 host 255.255.255.0,1,PERMIT
+36,as2dept1,105,permit ip host 3.0.1.0 host 255.255.255.0,2,PERMIT
+37,as2dept1,105,permit ip host 3.0.2.0 host 255.255.255.0,3,PERMIT
+38,as2dept1,RESTRICT_HOST_TRAFFIC_IN,permit ip 2.128.0.0 0.0.255.255 any,0,PERMIT
+39,as2dept1,RESTRICT_HOST_TRAFFIC_IN,deny   ip any any,1,DENY
+40,as2dept1,RESTRICT_HOST_TRAFFIC_IN,permit icmp any any,2,PERMIT
+41,as2dept1,RESTRICT_HOST_TRAFFIC_OUT,permit ip any 2.128.0.0 0.0.255.255,0,PERMIT
+42,as2dept1,RESTRICT_HOST_TRAFFIC_OUT,deny   ip 1.128.0.0 0.0.255.255 2.128.0.0 0.0.255.255,1,DENY
+43,as2dept1,RESTRICT_HOST_TRAFFIC_OUT,deny   ip any any,2,DENY
+44,as2dist1,102,permit ip host 2.128.0.0 host 255.255.0.0,0,PERMIT
+45,as2dist1,105,permit ip host 1.0.1.0 host 255.255.255.0,0,PERMIT
+46,as2dist1,105,permit ip host 1.0.2.0 host 255.255.255.0,1,PERMIT
+47,as2dist1,105,permit ip host 3.0.1.0 host 255.255.255.0,2,PERMIT
+48,as2dist1,105,permit ip host 3.0.2.0 host 255.255.255.0,3,PERMIT
+49,as2dist2,102,permit ip host 2.128.0.0 host 255.255.0.0,0,PERMIT
+50,as2dist2,105,permit ip host 1.0.1.0 host 255.255.255.0,0,PERMIT
+51,as2dist2,105,permit ip host 1.0.2.0 host 255.255.255.0,1,PERMIT
+52,as2dist2,105,permit ip host 3.0.1.0 host 255.255.255.0,2,PERMIT
+53,as2dist2,105,permit ip host 3.0.2.0 host 255.255.255.0,3,PERMIT
+54,as3border1,101,permit ip host 1.0.1.0 host 255.255.255.0,0,PERMIT
+55,as3border1,101,permit ip host 1.0.2.0 host 255.255.255.0,1,PERMIT
+56,as3border1,102,permit ip host 2.0.0.0 host 255.0.0.0,0,PERMIT
+57,as3border1,102,permit ip host 2.128.0.0 host 255.255.0.0,1,PERMIT
+58,as3border1,103,permit ip host 3.0.1.0 host 255.255.255.0,0,PERMIT
+59,as3border1,103,permit ip host 3.0.2.0 host 255.255.255.0,1,PERMIT
+60,as3border2,101,permit ip host 1.0.1.0 host 255.255.255.0,0,PERMIT
+61,as3border2,101,permit ip host 1.0.2.0 host 255.255.255.0,1,PERMIT
+62,as3border2,102,permit ip host 2.0.0.0 host 255.0.0.0,0,PERMIT
+63,as3border2,102,permit ip host 2.128.0.0 host 255.255.0.0,1,PERMIT
+64,as3border2,103,permit ip host 3.0.1.0 host 255.255.255.0,0,PERMIT
+65,as3border2,103,permit ip host 3.0.2.0 host 255.255.255.0,1,PERMIT
+66,host1,filter::FORWARD,default,0,PERMIT
+67,host1,filter::INPUT,-p udp --dport 53 -j ACCEPT,0,PERMIT
+68,host1,filter::INPUT,-p tcp --dport 22 -j ACCEPT,1,PERMIT
+69,host1,filter::INPUT,default,2,DENY
+70,host1,filter::OUTPUT,default,0,PERMIT
+71,host1,mangle::FORWARD,default,0,PERMIT
+72,host1,mangle::INPUT,default,0,PERMIT
+73,host1,mangle::OUTPUT,default,0,PERMIT
+74,host1,mangle::POSTROUTING,default,0,PERMIT
+75,host1,mangle::PREROUTING,default,0,PERMIT
+76,host1,nat::OUTPUT,default,0,PERMIT
+77,host1,nat::POSTROUTING,default,0,PERMIT
+78,host1,nat::PREROUTING,default,0,PERMIT
+79,host2,filter::FORWARD,default,0,PERMIT
+80,host2,filter::INPUT,-p tcp --dport 22 -j ACCEPT,0,PERMIT
+81,host2,filter::INPUT,default,1,DENY
+82,host2,filter::OUTPUT,-d 2.128.0.101 -j DROP,0,DENY
+83,host2,filter::OUTPUT,default,1,PERMIT
+84,host2,mangle::FORWARD,default,0,PERMIT
+85,host2,mangle::INPUT,default,0,PERMIT
+86,host2,mangle::OUTPUT,default,0,PERMIT
+87,host2,mangle::POSTROUTING,default,0,PERMIT
+88,host2,mangle::PREROUTING,default,0,PERMIT
+89,host2,nat::OUTPUT,default,0,PERMIT
+90,host2,nat::POSTROUTING,default,0,PERMIT
+91,host2,nat::PREROUTING,default,0,PERMIT

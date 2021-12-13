@@ -1,0 +1,2 @@
+default via 10.0.0.17 dev net0 
+10.0.0.16/30 dev net0 proto kernel scope link src 10.0.0.18 

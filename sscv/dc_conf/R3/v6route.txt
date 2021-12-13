@@ -1,0 +1,18 @@
+2001:1::/64 via fe80::30c6:cfff:fec7:66c4 dev net0 proto ospf metric 20 pref medium
+2001:2::/64 via fe80::30c6:cfff:fec7:66c4 dev net0 proto ospf metric 20 pref medium
+2001:3::/64 dev net0 proto kernel metric 256 pref medium
+2001:4::/64 via fe80::ecc1:d6ff:fe79:2010 dev net1 proto ospf metric 20 pref medium
+2001:5::/64 dev net1 proto kernel metric 256 pref medium
+2001:6::/64 via fe80::ecc1:d6ff:fe79:2010 dev net1 proto ospf metric 20 pref medium
+2001:7::/64 via fe80::ecc1:d6ff:fe79:2010 dev net1 proto ospf metric 20 pref medium
+local ::1 dev lo table local proto kernel metric 0 pref medium
+anycast 2001:3:: dev net0 table local proto kernel metric 0 pref medium
+local 2001:3::2 dev net0 table local proto kernel metric 0 pref medium
+anycast 2001:5:: dev net1 table local proto kernel metric 0 pref medium
+local 2001:5::1 dev net1 table local proto kernel metric 0 pref medium
+anycast fe80:: dev net0 table local proto kernel metric 0 pref medium
+anycast fe80:: dev net1 table local proto kernel metric 0 pref medium
+local fe80::7824:ffff:fe13:5d6d dev net1 table local proto kernel metric 0 pref medium
+local fe80::a46b:9dff:fe05:c16c dev net0 table local proto kernel metric 0 pref medium
+multicast ff00::/8 dev net0 table local proto kernel metric 256 pref medium
+multicast ff00::/8 dev net1 table local proto kernel metric 256 pref medium

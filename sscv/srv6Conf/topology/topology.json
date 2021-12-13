@@ -1,0 +1,52 @@
+[
+        {
+            "node1": {
+                "hostname": "R1",
+                "interfaceName": "net0"
+            },
+            "node2": {
+                "hostname": "R2",
+                "interfaceName": "net0"
+            }
+        },
+        {
+            "node1": {
+                "hostname": "R2",
+                "interfaceName": "net2"
+            },
+            "node2": {
+                "hostname": "R11",
+                "interfaceName": "net0"
+            }
+        },
+        {
+            "node1": {
+                "hostname": "R2",
+                "interfaceName": "net2"
+            },
+            "node2": {
+                "hostname": "R10",
+                "interfaceName": "net0"
+           }
+        },
+        {
+            "node1": {
+                "hostname": "R2",
+                "interfaceName": "net1"
+            },
+            "node2": {
+                "hostname": "R3",
+                "interfaceName": "net0"
+            }
+        },
+        {
+            "node1": {
+                "hostname": "R3",
+                "interfaceName": "net1"
+            },
+            "node2": {
+                "hostname": "R4",
+                "interfaceName": "net0"
+            }
+        }
+]

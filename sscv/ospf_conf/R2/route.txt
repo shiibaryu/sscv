@@ -1,0 +1,9 @@
+10.0.0.0/30 dev net0 proto kernel scope link src 10.0.0.2 
+10.0.0.4/30 via 10.0.0.14 dev net1 proto ospf metric 20 
+10.0.0.8/30 via 10.0.0.1 dev net0 proto ospf metric 20 
+10.0.0.12/30 dev net1 proto kernel scope link src 10.0.0.13 
+10.0.0.16/30 via 10.0.0.1 dev net0 proto ospf metric 20 
+10.0.0.20/30 proto ospf metric 20 
+	nexthop via 10.0.0.1 dev net0 weight 1 
+	nexthop via 10.0.0.14 dev net1 weight 1 
+10.0.0.24/30 via 10.0.0.14 dev net1 proto ospf metric 20 

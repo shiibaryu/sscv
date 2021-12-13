@@ -1,0 +1,12 @@
+2001:1::/64 via fe80::282e:5bff:fef8:99fd dev net0 proto ospf metric 20 pref medium
+2001:2::/64 dev net0 proto kernel metric 256 pref medium
+2001:3::/64 dev net1 proto kernel metric 256 pref medium
+2001:4::/64 via fe80::282e:5bff:fef8:99fd dev net0 proto ospf metric 20 pref medium
+fc00:1::/64 via fe80::282e:5bff:fef8:99fd dev net0 proto ospf metric 20 pref medium
+fc00:2::/64 via fe80::282e:5bff:fef8:99fd dev net0 proto ospf metric 20 pref medium
+fc00:3::/64 dev lo proto kernel metric 256 pref medium
+fc00:4::/64 via fe80::e8e5:c8ff:fe3b:5eea dev net1 proto ospf metric 20 pref medium
+fc00:10::/64 via fe80::282e:5bff:fef8:99fd dev net0 proto ospf metric 20 pref medium
+fc00:11::/64 via fe80::282e:5bff:fef8:99fd dev net0 proto ospf metric 20 pref medium
+fe80::/64 dev net0 proto kernel metric 256 pref medium
+fe80::/64 dev net1 proto kernel metric 256 pref medium
